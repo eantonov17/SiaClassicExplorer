@@ -1,0 +1,42 @@
+
+CREATE TABLE  `blocks` (
+ `height` INT( 7 ) UNSIGNED NOT NULL ,
+ `id` CHAR( 64 ) NOT NULL ,
+ `parentid` CHAR( 64 ) NOT NULL ,
+ `timestamp` INT( 10 ) UNSIGNED NOT NULL ,
+ `minerpayouts` CHAR( 10 ) NOT NULL ,
+ `tx_count` SMALLINT( 5 ) UNSIGNED NOT NULL ,
+PRIMARY KEY (  `height` ) ,
+UNIQUE KEY  `id` (  `id` ) ,
+KEY  `parentid` (  `parentid` )
+) ENGINE = MYISAM DEFAULT CHARSET = ASCII;
+
+CREATE TABLE  `txs` (
+ `id` CHAR( 64 ) NOT NULL ,
+ `blockheight` INT( 10 ) UNSIGNED NOT NULL ,
+ `siacoininputs` SMALLINT( 5 ) UNSIGNED NOT NULL DEFAULT  '0',
+ `siacoinoutputs` SMALLINT( 5 ) UNSIGNED NOT NULL DEFAULT  '0',
+ `filecontracts` SMALLINT( 5 ) UNSIGNED NOT NULL DEFAULT  '0',
+ `filecontractrevisions` SMALLINT( 5 ) UNSIGNED NOT NULL DEFAULT  '0',
+ `storageproofs` SMALLINT( 5 ) UNSIGNED NOT NULL DEFAULT  '0',
+ `siafundinputs` SMALLINT( 5 ) UNSIGNED NOT NULL DEFAULT  '0',
+ `siafundoutputs` SMALLINT( 5 ) UNSIGNED NOT NULL DEFAULT  '0',
+ `minerfees` SMALLINT( 5 ) UNSIGNED NOT NULL DEFAULT  '0',
+ `arbitrarydata` SMALLINT( 5 ) UNSIGNED NOT NULL DEFAULT  '0',
+ `transactionsignatures` SMALLINT( 5 ) UNSIGNED NOT NULL DEFAULT  '0',
+PRIMARY KEY (  `id` ,  `blockheight` ) ,
+KEY  `id` (  `id` ) ,
+KEY  `blockheight` (  `blockheight` )
+) ENGINE = MYISAM DEFAULT CHARSET = ASCII;
+
+CREATE TABLE  `siacoinoutputs` (
+ `id` CHAR( 64 ) NOT NULL ,
+ `block_height` INT( 11 ) UNSIGNED NOT NULL ,
+ `tx_id` CHAR( 64 ) NOT NULL ,
+ `value` DECIMAL( 30, 0 ) UNSIGNED NOT NULL ,
+ `unlockhash` CHAR( 64 ) NOT NULL ,
+PRIMARY KEY (  `id` ) ,
+KEY  `block_height` (  `block_height` ) ,
+KEY  `unlockhash` (  `unlockhash` ) ,
+KEY  `tx_id` (  `tx_id` )
+) ENGINE = MYISAM DEFAULT CHARSET = ASCII;

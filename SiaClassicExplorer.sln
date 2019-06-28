@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28917.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiaClassicExplorer", "SiaClassicExplorer\SiaClassicExplorer.csproj", "{16441205-CFD2-4E98-AA1C-2B475E08A392}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebClient", "WebClient\WebClient.csproj", "{439C88CE-F31C-4629-B101-3D2A16F6CFE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySqlClient", "MySqlClient\MySqlClient.csproj", "{E564F03F-28DE-4F53-8743-CEFDA428CD3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "scdbu", "scdbu\scdbu.csproj", "{A82B469F-CD34-4723-A4D7-0F72CDE29C4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiaClassicLib", "SiaClassicLib\SiaClassicLib.csproj", "{B12A9787-C192-4C8E-811F-1DC22FD039D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{E6116140-2E5F-413E-B4BF-09DAA9F81CE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16441205-CFD2-4E98-AA1C-2B475E08A392}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16441205-CFD2-4E98-AA1C-2B475E08A392}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16441205-CFD2-4E98-AA1C-2B475E08A392}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16441205-CFD2-4E98-AA1C-2B475E08A392}.Release|Any CPU.Build.0 = Release|Any CPU
+		{439C88CE-F31C-4629-B101-3D2A16F6CFE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{439C88CE-F31C-4629-B101-3D2A16F6CFE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{439C88CE-F31C-4629-B101-3D2A16F6CFE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{439C88CE-F31C-4629-B101-3D2A16F6CFE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E564F03F-28DE-4F53-8743-CEFDA428CD3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E564F03F-28DE-4F53-8743-CEFDA428CD3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E564F03F-28DE-4F53-8743-CEFDA428CD3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E564F03F-28DE-4F53-8743-CEFDA428CD3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A82B469F-CD34-4723-A4D7-0F72CDE29C4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A82B469F-CD34-4723-A4D7-0F72CDE29C4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A82B469F-CD34-4723-A4D7-0F72CDE29C4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A82B469F-CD34-4723-A4D7-0F72CDE29C4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B12A9787-C192-4C8E-811F-1DC22FD039D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B12A9787-C192-4C8E-811F-1DC22FD039D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B12A9787-C192-4C8E-811F-1DC22FD039D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B12A9787-C192-4C8E-811F-1DC22FD039D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6116140-2E5F-413E-B4BF-09DAA9F81CE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6116140-2E5F-413E-B4BF-09DAA9F81CE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6116140-2E5F-413E-B4BF-09DAA9F81CE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6116140-2E5F-413E-B4BF-09DAA9F81CE8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A091855-6BCF-4EAA-AE13-47EE7F6BFE4C}
+	EndGlobalSection
+EndGlobal
