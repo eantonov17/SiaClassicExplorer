@@ -1,1 +1,0 @@
-        public const string ConnectionString = "server=sccdb1.db.2895217.3fd.hostedresource.net;user=sccdb1;database=sccdb1;password=Ea!@scdb6176";
